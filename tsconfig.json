@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -12,9 +16,43 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "incremental": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "downlevelIteration": true,
     "jsx": "preserve",
-    "incremental": true
+    "rootDir": ".",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false,
+    "baseUrl": "./src",
+    "typeRoots": [
+      "./types",
+    ],
+    "paths": {
+      "components/*": ["components/*"],
+      "basicComponents/*": ["basicComponents/*"],
+      "actions/*": ["actions/*"],
+      "delivery/*": ["delivery/*"],
+      "common/*": ["common/*"],
+      "forms/*": ["forms/*"],
+      "modals/*": ["modals/*"],
+      "models/*": ["models/*"],
+      "pages/*": ["pages/*"],
+      "theme/*": ["theme/*"],
+      "assets/*": ["assets/*"],
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
