@@ -12,7 +12,12 @@ export const styles = {
     pt: '2em',
   },
   searchBar: {
-    maxWidth: '20em'
+    transition: '0.3s ease',
+    maxWidth: '20em',
+
+    '&:hover': {
+      boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.15)',
+    }
   },
   actionBar: {
     mt: '2em',

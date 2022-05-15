@@ -57,6 +57,10 @@ let theme = createTheme({
           textTransform: 'none',
           boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.04)',
           padding: '0.75em 1.25em',
+
+          '&:hover': {
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.15)',
+          }
         },
         containedSecondary: {
           color: colours.white,
