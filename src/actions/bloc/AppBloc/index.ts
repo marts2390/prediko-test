@@ -128,7 +128,6 @@ class AppBloc extends ProtoBloc<IAppBlocState> implements IAppBloc {
   }
 
   updateUser = async (userDetails: IAddNewUserFormModel, id: string) => {
-    console.log(userDetails)
     const updateUserObj:IUserResponseModel = {
       id: id,
       first_name: userDetails.firstname,
