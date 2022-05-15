@@ -131,6 +131,7 @@ let theme = createTheme({
         root: {
           boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.04)',
           borderRadius: '18px',
+          background: 'white !important',
 
           '& .MuiOutlinedInput-input': {
             padding: '1em',
